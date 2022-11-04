@@ -1,0 +1,25 @@
+header {
+    padding: 20px 0;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mode {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.mode i {
+    margin-right: 10px;
+    rotate: -25deg;
+}
+
+.mode p {
+    font-weight: 600;
+}

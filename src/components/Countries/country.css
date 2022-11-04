@@ -1,0 +1,37 @@
+#wrapper .container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 25px;
+}
+
+.countryContent {
+    margin: 25px 15px;
+    width: 20%;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 7px;
+}
+
+.countryContent img {
+    width: 100%;
+    border-radius: 7px 7px 0px 0px;
+}
+
+.data {
+    padding: 20px;
+}
+
+.data h2 {
+    font-size: 1.2rem;
+}
+
+.other p {
+    font-size: 0.9rem;
+    margin-top: 5px;
+    font-weight: 600;
+}
+
+.other span {
+    font-weight: 300;
+}
