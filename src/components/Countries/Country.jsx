@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 import './country.css';
 
 const Country = () => {
@@ -7,7 +7,7 @@ const Country = () => {
 
     useEffect(() => {
         fetch("https://restcountries.com/v2/all").then(res => res.json()).then(result => {
-            setCountry(result)
+            setCountry(result);
         })
     }, []);
 
@@ -15,7 +15,7 @@ const Country = () => {
         <div id="wrapper">
             <div className="container">
                 {country.map((count) => (
-                    <Link to={`/${count.name.toLowerCase().replace(/\s/g, "%20")}`} className='countryContent' key={count.alpha3Code}>
+                    <Link to={`/details/${count.name}`} className='countryContent' key={count.alpha3Code}>
                         <img src={count.flag} alt={count.name} />
                         <div className="data">
                             <h2>{count.name}</h2>
