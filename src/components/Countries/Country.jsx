@@ -22,7 +22,7 @@ const Country = () => {
         }
     }
 
-    const countryFilter = country.filter((country) => country.name.toLowerCase().includes(search));
+    const countryFilter = country.filter((country) => country.name.toLowerCase().includes(search.toLowerCase()));
 
     return (
         <div id="wrapper">
