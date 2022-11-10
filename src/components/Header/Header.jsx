@@ -5,7 +5,11 @@ const Header = () => {
     const [iconMoon, setIconMoon] = useState('fa-regular fa-moon');
 
     function changeTheme(){
-        return iconMoon === 'fa-regular fa-moon' ? setIconMoon('fa-solid fa-moon') : setIconMoon('fa-regular fa-moon');
+        if(iconMoon === 'fa-regular fa-moon'){
+            setIconMoon('fa-solid fa-moon');
+        } else {
+            setIconMoon('fa-regular fa-moon');
+        } 
     }
 
     return(

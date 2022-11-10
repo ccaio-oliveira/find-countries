@@ -1,4 +1,43 @@
-#wrapper .container {
+/* Tema Claro */
+
+#searchFilter {
+    margin-top: 30px;
+}
+
+#searchFilter .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#search {
+    width: 20%;
+}
+
+#search i {
+    position: absolute;
+    padding: 10px;
+    min-width: 40px;
+}
+
+.inputSearch {
+    width: 100%;
+    padding: 10px 40px;
+    border: none;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+}
+
+#filterRegion {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 7px;
+}
+
+#countries .container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -34,4 +73,9 @@
 
 .other span {
     font-weight: 300;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
 }
