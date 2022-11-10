@@ -33,7 +33,7 @@ const Country = ({ mode }) => {
                         <input type="text" className={`inputSearch-${mode}`} placeholder='Search for a country...' onChange={e => setSearch(e.target.value)} />
                     </div>
                     <div id="filter">
-                        <select name="filter" id="filterRegion" onChange={e => changeRegion(e)}>
+                        <select name="filter" id={`filterRegion-${mode}`} onChange={e => changeRegion(e)}>
                             <option value="Filter by Region" defaultValue>Filter by Region</option>
                             <option value="Africa">Africa</option>
                             <option value="Americas">Americas</option>
@@ -44,7 +44,7 @@ const Country = ({ mode }) => {
                     </div>
                 </div>
             </div>
-            <div id="countries">
+            <div id={`countries-${mode}`}>
                 <div className="container">
                     {countryFilter.map((count) => {
                         if (filterRegion === 'Filter by Region') {
