@@ -1,4 +1,4 @@
-/* Tema Claro */
+/* Light Mode */
 
 #searchFilter {
     margin-top: 30px;
@@ -10,31 +10,36 @@
     align-items: center;
 }
 
-#search {
+#search-light, #search-dark {
     width: 20%;
 }
 
-#search i {
+#search-light i, #search-dark i {
     position: absolute;
     padding: 10px;
     min-width: 40px;
 }
 
-.inputSearch {
+.inputSearch-light {
     width: 100%;
     padding: 10px 40px;
     border: none;
-    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
 }
 
 #filterRegion {
     width: 100%;
     padding: 10px;
     border: none;
-    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
     font-weight: bold;
     cursor: pointer;
     border-radius: 7px;
+}
+
+#wrapper-light {
+    background: #fff;
+    color: #000;
 }
 
 #countries .container {
@@ -48,7 +53,7 @@
 .countryContent {
     margin: 25px 15px;
     width: 20%;
-    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
     border-radius: 7px;
 }
 
@@ -78,4 +83,18 @@
 a {
     text-decoration: none;
     color: #000;
+}
+
+/* Dark Mode */
+#wrapper-dark {
+    background: hsl(207, 26%, 17%);
+    color: #fff;
+}
+
+.inputSearch-dark {
+    background: hsl(207, 26%, 17%);
+    width: 100%;
+    padding: 10px 40px;
+    border: none;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
 }

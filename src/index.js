@@ -2,8 +2,18 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
 
-const root = ReactDOM.createRoot(document.querySelector('#root'));
+const rootEl = document.querySelector('#root');
+
+const root = ReactDOM.createRoot(rootEl);
+
+function theme(mode){
+    if(mode === 'dark'){
+        rootEl.style.backgroundColor = 'hsl(207, 26%, 17%)';
+    } else {
+        rootEl.style.backgroundColor = '#fff';
+    }
+}
 
 root.render(
-    <App />
+    <App theme={theme} />
 )

@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { Link } from "react-router-dom";
 import './country.css';
 
-const Country = () => {
+const Country = ({ mode }) => {
     const [country, setCountry] = useState([]);
     const [search, setSearch] = useState('');
     const [filterRegion, setFilterRegion] = useState('Filter by Region');
@@ -25,12 +25,12 @@ const Country = () => {
     const countryFilter = country.filter((country) => country.name.toLowerCase().includes(search.toLowerCase()));
 
     return (
-        <div id="wrapper">
+        <div id={`wrapper-${mode}`}>
             <div id="searchFilter">
                 <div className="container">
-                    <div id="search">
+                    <div id={`search-${mode}`}>
                         <i className="fa-solid fa-magnifying-glass"></i>
-                        <input type="text" className='inputSearch' placeholder='Search for a country...' onChange={e => setSearch(e.target.value)} />
+                        <input type="text" className={`inputSearch-${mode}`} placeholder='Search for a country...' onChange={e => setSearch(e.target.value)} />
                     </div>
                     <div id="filter">
                         <select name="filter" id="filterRegion" onChange={e => changeRegion(e)}>

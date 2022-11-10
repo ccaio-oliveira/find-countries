@@ -7,6 +7,14 @@ body {
     font-family: 'Nunito Sans', sans-serif;
 }
 
+#root .light {
+    background: #fff;
+}
+
+#root .dark {
+    background: hsl(207, 26%, 17%);
+}
+
 .container {
     width: 90%;
     margin: 0px auto;
