@@ -50,7 +50,7 @@ const Country = ({ mode }) => {
                         if (filterRegion === 'Filter by Region') {
                             return (
                                 <Link to={`/details/${count.name}`} className='countryContent' key={count.alpha3Code}>
-                                    <img src={count.flag} alt={count.name} />
+                                    <img src={count.flags.svg} alt={count.name} />
                                     <div className="data">
                                         <h2>{count.name}</h2>
                                         <div className="other">
