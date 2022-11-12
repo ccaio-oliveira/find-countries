@@ -4,6 +4,10 @@
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
 }
 
+h1 {
+    font-size: 1.6rem;
+}
+
 .container {
     display: flex;
     justify-content: space-between;
