@@ -35,7 +35,6 @@
 
 .information-light, .information-dark {
     width: 50%;
-    margin-left: 100px;
     display: flex;
     flex-direction: column;
 }
@@ -75,4 +74,25 @@
 
 .information-dark {
     color: #fff;
+}
+
+@media (max-width: 686px){
+    #details {
+        margin-top: 50px;
+    }
+
+    #country {
+        margin-top: 30px;
+        flex-direction: column;
+        align-items: flex-start;
+        height: 100%;
+    }
+
+    #img {
+        width: 100%;
+    }
+
+    .information-light, .information-dark {
+        width: 100%;
+    }
 }
